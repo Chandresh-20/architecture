@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">Studio Name</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </nav>
+  </header>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneh Shilp Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { margin:0; font-family:'Segoe UI',sans-serif; color:#222; background:#f9f9f9; }
+    .hero-banner { background:url('assets/images/hero-banner.jpg') center/cover no-repeat; height:300px;
+      display:flex; align-items:center; justify-content:center; color:#fff; font-size:2rem; position:relative;
+      text-shadow:2px 2px 6px rgba(0,0,0,0.6); }
+    .hero-banner button { position:absolute; bottom:20px; background:#c70000; color:#fff; border:none;
+      padding:0.8rem 1.5rem; border-radius:4px; cursor:pointer; }
+    .section { max-width:1100px; margin:auto; padding:2rem 1rem; }
+    .section h2 { text-align:center; margin-bottom:1rem; font-size:1.8rem; }
+
+    /* Services preview */
+    .services-preview { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+    .services-preview .card { background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 0 8px rgba(0,0,0,0.1); }
+    .services-preview .card img { width:100%; display:block; }
+    .services-preview .card-content { padding:1rem; text-align:center; }
+    .services-preview .card-content button { background:#c70000; color:#fff; border:none; 
+      padding:0.5rem 1rem; border-radius:4px; cursor:pointer; }
+
+    /* About snippet */
+    .about-snippet p { line-height:1.7; font-size:1.1rem; text-align:center; max-width:800px; margin:auto; }
+
+    /* Gallery snippet */
+    .gallery-preview { display:grid; gap:0.5rem; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+    .gallery-preview img { width:100%; border-radius:6px; }
+
+    footer { background:#000; color:#fff; text-align:center; padding:2rem 1rem; }
+    .footer-columns { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-bottom:1rem; }
+    .footer-col a { color:#fff; display:block; margin:0.3rem 0; text-decoration:none; }
+    .social-icons a { color:#fff; margin:0 0.5rem; font-size:1.2rem; text-decoration:none; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    SNEH-SHILP STUDIO
+    <button onclick="location.href='contact.html'">Enquiry Now</button>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section">
+    <h2>Our Services</h2>
+    <div class="services-preview">
+      <div class="card">
+        <img src="assets/images/service1.jpg" alt="Architectural Consultancy">
+        <div class="card-content">
+          <h3>Architectural Consultancy</h3>
+          <button onclick="location.href='services.html'">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/service2.jpg" alt="Interior Designing">
+        <div class="card-content">
+          <h3>Interior Designing</h3>
+          <button onclick="location.href='services.html'">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/service3.jpg" alt="Landscaping">
+        <div class="card-content">
+          <h3>Landscaping</h3>
+          <button onclick="location.href='services.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Snippet -->
+  <div class="section about-snippet">
+    <h2>About Us</h2>
+    <p><strong>SNEH SHILP ARCHITECTS</strong> is a multi-disciplinary studio focusing on sustainable and climate‑responsive architecture and interior design. We craft environments inspired by local heritage and nature. <br><br>Our passion combines design excellence with client aspirations, resulting in meaningful spaces that reflect your values.</p>
+  </div>
+
+  <!-- Gallery Snippet -->
+  <div class="section">
+    <h2>Our Gallery</h2>
+    <div class="gallery-preview">
+      <img src="assets/images/service1.jpg" alt="Gallery 1">
+      <img src="assets/images/service2.jpg" alt="Gallery 2">
+      <img src="assets/images/service3.jpg" alt="Gallery 3">
+    </div>
+    <div style="text-align:center; margin-top:1rem">
+      <button onclick="location.href='gallery.html'" style="background:#007acc;color:#fff;border:none;
+        padding:0.6rem 1.2rem;border-radius:4px;cursor:pointer;">View Full Gallery</button>
+    </div>
+  </div>
+
+  <!-- Testimonials Snippet -->
+  <div class="section">
+    <h2>What Clients Say</h2>
+    <blockquote style="max-width:700px;margin:1rem auto;padding:1rem;
+      border-left:4px solid #007acc;background:#fafafa;">“Professional, reliable, innovative.”</blockquote>
+    <blockquote style="max-width:700px;margin:1rem auto;padding:1rem;
+      border-left:4px solid #007acc;background:#fafafa;">“Transformed our dream into reality!”</blockquote>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <strong>Links</strong>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <strong>Contact Us</strong><br>
+        Sneh Shilp Architects<br>
+        C‑179/490, Gorakhpur<br>
+        +91 7318444556, +91 9076615571<br>
+        Email: <a href="mailto:ar.ashwanirai@gmail.com" style="color:#fff;">ar.ashwanirai@gmail.com</a>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Sneh Shilp Architects. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

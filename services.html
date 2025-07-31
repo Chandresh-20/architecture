@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Sneh Shilp Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">Studio Name</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </nav>
+  </header>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    .hero-banner {
+      background: url('assets/images/services-hero.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .service-content {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .service-content h3 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .service-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .service-buttons a {
+      text-decoration: none;
+      background: #c70000;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .service-buttons a:nth-child(2) {
+      background: #007acc;
+    }
+
+    .service-buttons a:hover {
+      opacity: 0.9;
+    }
+
+    .cta-section {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .cta-section button {
+      background: #ffcc00;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col a {
+      color: #fff;
+      display: block;
+      text-decoration: none;
+      margin: 0.5rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero-banner">
+    OUR SERVICES
+  </div>
+
+  <!-- Services List -->
+  <div class="services-list">
+
+    <!-- Service Item -->
+    <div class="service-card">
+      <img src="assets/images/service1.jpg" alt="Architectural Consultancy">
+      <div class="service-content">
+        <h3>Architectural Consultancy</h3>
+        <div class="service-buttons">
+          <a href="contact.html">Enquiry Now</a>
+          <a href="#">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copy and paste for more services -->
+    <div class="service-card">
+      <img src="assets/images/service2.jpg" alt="Interior Designing">
+      <div class="service-content">
+        <h3>Interior Designing</h3>
+        <div class="service-buttons">
+          <a href="contact.html">Enquiry Now</a>
+          <a href="#">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/images/service3.jpg" alt="Landscaping">
+      <div class="service-content">
+        <h3>Landscaping</h3>
+        <div class="service-buttons">
+          <a href="contact.html">Enquiry Now</a>
+          <a href="#">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more services similarly... -->
+
+  </div>
+
+  <!-- Call to Action -->
+  <div class="cta-section">
+    <h3>Do you have a project?</h3>
+    <button onclick="location.href='contact.html'">Let's talk</button>
+  </div>
+
+  <!-- Google Map -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.809998597597!2d83.3804445!3d26.844903599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39916e55b52ffcf3%3A0x37dfe7422e5c888d!2sSneh%20Shilp%20studio!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <strong>Links</strong>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <strong>Contact Us</strong><br>
+        Sneh Shilp Architects<br>
+        C‑179/490, Thakur Complex, Gorakhpur<br>
+        +91 7318444556, +91 9076615571<br>
+        Email: <a href="mailto:ar.ashwanirai@gmail.com">ar.ashwanirai@gmail.com</a>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Sneh Shilp Architects. Designed & Developed by You 🔧</p>
+  </footer>
+
+</body>
+</html>

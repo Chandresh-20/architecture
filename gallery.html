@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Sneh Shilp Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Navigation */
+    nav {
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+
+    nav ul li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #222;
+      min-width: 150px;
+    }
+
+    .dropdown a {
+      padding: 0.5rem 1rem;
+      display: block;
+      border-bottom: 1px solid #333;
+    }
+
+    .hero {
+      background: url('assets/images/gallery-hero.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .gallery-section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 2rem;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .footer-col a {
+      display: block;
+      color: #fff;
+      margin: 0.3rem 0;
+      text-decoration: none;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">SNEH SHILP STUDIO</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li>
+        <a href="#">Gallery</a>
+        <div class="dropdown">
+          <a href="#architectural">Architectural</a>
+          <a href="#interior">Interior</a>
+          <a href="#residential">Residential</a>
+          <a href="#other">Other</a>
+        </div>
+      </li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    GALLERY
+  </div>
+
+  <!-- Sections -->
+  <div class="gallery-section" id="architectural">
+    <h2>Architectural</h2>
+    <div class="gallery-grid">
+      <img src="assets/images/arch1.jpg" alt="Architecture 1" />
+      <img src="assets/images/arch2.jpg" alt="Architecture 2" />
+      <img src="assets/images/arch3.jpg" alt="Architecture 3" />
+      <img src="assets/images/arch4.jpg" alt="Architecture 4" />
+    </div>
+  </div>
+
+  <div class="gallery-section" id="interior">
+    <h2>Interior</h2>
+    <div class="gallery-grid">
+      <img src="assets/images/interior1.jpg" alt="Interior 1" />
+      <img src="assets/images/interior2.jpg" alt="Interior 2" />
+    </div>
+  </div>
+
+  <div class="gallery-section" id="residential">
+    <h2>Residential</h2>
+    <div class="gallery-grid">
+      <img src="assets/images/home1.jpg" alt="Residential 1" />
+      <img src="assets/images/home2.jpg" alt="Residential 2" />
+    </div>
+  </div>
+
+  <div class="gallery-section" id="other">
+    <h2>Other</h2>
+    <div class="gallery-grid">
+      <img src="assets/images/misc1.jpg" alt="Misc 1" />
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.809998597597!2d83.3804445!3d26.844903599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39916e55b52ffcf3%3A0x37dfe7422e5c888d!2sSneh%20Shilp%20studio!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <strong>Links</strong>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <strong>Contact</strong>
+        <p>Sneh Shilp Architects<br>
+        C‑179/490, Thakur Complex, Gorakhpur</p>
+        <p>+91 7318444556<br>+91 9076615571</p>
+        <p>Email: ar.ashwanirai@gmail.com</p>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Sneh Shilp Architects. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
